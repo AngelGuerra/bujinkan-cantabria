@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Gyokko Ryū Kosshijutsu",
+    "name_jp": "玉虎流骨指術",
+    "description": "Fundada por Hakuunsai Tozawa en el siglo XII."
+  },
+  {
+    "name": "Kōto Ryū Koppōjutsu",
+    "name_jp": "虎倒流骨法術",
+    "description": "Fundada por Sakagami Taro Kunishige en el siglo XVI."
+  },
+  {
+    "name": "Shinden Fudō Ryū Dakentaijutsu",
+    "name_jp": "神伝不動流打拳体術",
+    "description": "Fundada por Izumo Kanja Yoshiteru en el siglo XII."
+  },
+  {
+    "name": "Takagi Yōshin Ryū Jūtaijutsu",
+    "name_jp": "高木揚心流柔体術",
+    "description": "Fundada por Takagi Oriemon Shigenobu en el siglo XVII."
+  },
+  {
+    "name": "Kukishinden Ryū Happō Bikenjutsu",
+    "name_jp": "九鬼神伝流八法秘剣術",
+    "description": "Fundada por Izumo Kanja Yoshiteru en el siglo XII."
+  },
+  {
+    "name": "Gikan Ryū Koppōjutsu",
+    "name_jp": "義鑑流骨法術",
+    "description": "Fundada por Unryū Hangan Gikanbo en el siglo XVI."
+  },
+  {
+    "name": "Togakure Ryū Ninpō",
+    "name_jp": "戸隠流忍法",
+    "description": "Fundada por Daisuke Nishina en el siglo XII."
+  },
+  {
+    "name": "Kumogakure Ryū Ninpō",
+    "name_jp": "雲隠流忍法",
+    "description": "Fundada por Heinaizaemon Ienaga Iga en el siglo XVI."
+  },
+  {
+    "name": "Gyokushin Ryū Ninpō",
+    "name_jp": "玉心流忍法",
+    "description": "Fundada por Sasaki Goemon Teruyoshi, su fecha de creación es desconocida."
+  }
+]

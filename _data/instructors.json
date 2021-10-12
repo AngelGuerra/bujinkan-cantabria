@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Fernando Cuervas-Mons",
+    "grade": "Shihan 14º DAN",
+    "bg": "https://unsplash.it/800/600?image=59",
+    "phone": "615000000",
+    "email": "test@test.com"
+  },
+  {
+    "name": "Héctor Nieto",
+    "grade": "Shidoshi 6º DAN",
+    "bg": "https://unsplash.it/800/600?image=40",
+    "phone": "615000000",
+    "email": "test@test.com"
+  }
+]

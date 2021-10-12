@@ -1,0 +1,18 @@
+<section class="min-h-screen p-4 pt-36">
+  <header class="text-center mb-10">
+    <h2 class="text-4xl sm:text-5xl text-[#bf0202] mb-2">Ryūha</h2>
+    <p class="text-xl">Las nueve escuelas de la Bujinkan</p>
+  </header>
+
+  <div class="flex flex-wrap gap-6 items-top justify-center">
+    {% for ryu in ryuha %}
+    <div class="w-80 max-w-full bg-white rounded-xl overflow-hidden shadow">
+      <div class="p-5 border-t-4 border-[#bf0202]">
+        <h3 class="text-2xl font-bold">{{ryu.name}}</h3>
+        <p class="mt-2 text-lg font-semibold text-gray-600">{{ryu.name_jp}}</p>
+        <p class="mt-1 text-gray-500 font-">{{ryu.description}}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>

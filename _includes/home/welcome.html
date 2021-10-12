@@ -1,0 +1,54 @@
+{% capture bgryuha %}{% assetImageUrl "_assets/img/ryuha.png", 100, 680 %}{%
+endcapture %}
+<style>
+  section#home {
+    background-position-y: 8rem;
+    background-image: url("{{bgryuha}}");
+  }
+</style>
+
+<section
+  id="home"
+  class="
+    flex
+    justify-center
+    items-center
+    min-h-screen
+    p-4
+    pt-36
+    text-white
+    bg-gray-900 bg-no-repeat bg-contain
+    sm:bg-auto sm:bg-center
+    xl:bg-right
+  "
+>
+  <div class="xl:pr-[700px] h-full flex items-center justify-center">
+    <section
+      class="p-6 rounded border shadow bg-white bg-opacity-95 text-gray-900"
+    >
+      <header class="mb-4">
+        <h1 class="text-4xl sm:text-5xl text-[#bf0202] mb-2">
+          Bujinkan Cantabria
+        </h1>
+        <p class="text-xl">Ninjutsu Budo Taijutsu</p>
+      </header>
+
+      <address>
+        Honbu Dojo:
+        <a
+          href="https://www.google.es/maps/place/Gimnasio+Cuervas-Mons/@43.3255362,-3.8521905,17z/data=!3m1!4b1!4m5!3m4!1s0xd49313e8490fd11:0x3c261613722b1d58!8m2!3d43.3255404!4d-3.8499923"
+          title="Ubicación en Google Maps"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="underline"
+          >Gimnasio Cuervas-Mons</a
+        ><br />
+        El Ferial, 3<br />
+        39620 Sarón, Cantabria<br />
+        <a href="tel:+34646785364" title="Teléfono de Fernando Cuervas-Mons"
+          >646785364</a
+        >
+      </address>
+    </section>
+  </div>
+</section>

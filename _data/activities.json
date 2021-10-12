@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Ninjutsu",
+    "subtitle": "Lorem Ipsum",
+    "bg": "https://image.shutterstock.com/z/stock-photo-unrecognizable-youngsters-dressing-up-for-martial-arts-class-blue-belt-1700701177.jpg"
+  },
+  {
+    "name": "Kick Boxing",
+    "subtitle": "Lorem Ipsum",
+    "bg": "https://image.shutterstock.com/z/stock-photo-wrapping-up-690696292.jpg"
+  },
+  {
+    "name": "Yoga",
+    "subtitle": "Lorem Ipsum",
+    "bg": "https://image.shutterstock.com/z/stock-photo-yoga-group-concept-young-couple-meditating-together-sitting-back-to-back-on-windows-background-552259924.jpg"
+  },
+  {
+    "name": "Pilates",
+    "subtitle": "Lorem Ipsum",
+    "bg": "https://image.shutterstock.com/z/stock-photo-cropped-image-of-afro-american-rolling-yoga-mat-670209337.jpg"
+  },
+  {
+    "name": "Fitness",
+    "subtitle": "Lorem Ipsum",
+    "bg": "https://image.shutterstock.com/z/stock-photo-athletic-woman-trainer-doing-aerobic-class-with-steppers-to-people-group-on-a-fitness-center-sport-501343006.jpg"
+  },
+  {
+    "name": "Clases de Japonés",
+    "subtitle": "Lorem Ipsum",
+    "bg": "https://image.shutterstock.com/z/stock-photo-beginner-japanese-language-learner-writing-hello-word-in-japanese-hiragana-characters-on-a-notebook-1378318364.jpg"
+  }
+]

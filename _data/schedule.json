@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Lunes",
+    "activities": [
+      {
+        "name": "Pilates",
+        "gym": "Dojo Cuervas-Mons",
+        "schedule": "18:00 - 19:00",
+        "class": "bg-yellow-100"
+      },
+      {
+        "name": "Fitness",
+        "gym": "Dojo Cuervas-Mons",
+        "schedule": "19:00 - 20:00",
+        "class": "bg-green-100"
+      }
+    ]
+  },
+  {
+    "name": "Martes",
+    "activities": [
+      {
+        "name": "Ninjutsu (Adultos)",
+        "gym": "Dojo Cuervas-Mons",
+        "schedule": "10:30 - 12:00",
+        "class": "bg-blue-100"
+      },
+      {
+        "name": "Ninjutsu (Adultos)",
+        "gym": "Dojo Cuervas-Mons",
+        "schedule": "19:00 - 20:30",
+        "class": "bg-blue-100"
+      },
+      {
+        "name": "Kick Boxing",
+        "gym": "Dojo Cuervas-Mons",
+        "schedule": "20:00 - 21:30",
+        "class": "bg-red-100"
+      }
+    ]
+  },
+  {
+    "name": "Miércoles",
+    "activities": [
+      {
+        "name": "Pilates",
+        "gym": "Dojo Cuervas-Mons",
+        "schedule": "18:00 - 19:00",
+        "class": "bg-yellow-100"
+      },
+      {
+        "name": "Fitness",
+        "gym": "Dojo Cuervas-Mons",
+        "schedule": "19:00 - 20:00",
+        "class": "bg-green-100"
+      }
+    ]
+  },
+  {
+    "name": "Jueves",
+    "activities": [
+      {
+        "name": "Ninjutsu (Adultos)",
+        "gym": "Dojo Cuervas-Mons",
+        "schedule": "10:30 - 12:00",
+        "class": "bg-blue-100"
+      },
+      {
+        "name": "Ninjutsu (Adultos)",
+        "gym": "Dojo Cuervas-Mons",
+        "schedule": "19:00 - 20:30",
+        "class": "bg-blue-100"
+      },
+      {
+        "name": "Kick Boxing",
+        "gym": "Dojo Cuervas-Mons",
+        "schedule": "20:00 - 21:30",
+        "class": "bg-red-100"
+      }
+    ]
+  },
+  {
+    "name": "Viernes",
+    "activities": []
+  }
+]
