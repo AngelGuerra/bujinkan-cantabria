@@ -1,8 +1,30 @@
 <footer id="footer" class="bg-gray-200 p-8 border-t-2 border-[#bf0202]">
-  <p class="text-center mb-6">En proceso de construcción con 🖤 por un <a href="https://angelguerra.me" title="Ángel Guerra" target="_blank">🥷🏼</a></p>
+  <p class="text-center mb-6">
+    <span class="text-[#bf0202] font-bold">En proceso de construcción</span> con 🖤 por un
+    <a href="https://angelguerra.me" title="Ángel Guerra" target="_blank"
+      >🥷🏼</a
+    >
+  </p>
 
   <div class="flex flex-row justify-center items-center gap-6 sm:">
-    {% responsiveImage "_assets/img/bujinkan-collado-dojo.svg", "Logo de la Bujinkan Collado Dojo", "w-24", "lazy" %}
-    {% responsiveImage "_assets/img/federacion-espanola-kickboxing-muaythai.svg", "Logo de la Federación Española de Kick Boxing y Muay Thai", "w-24", "lazy" %}
+    <a
+      href="https://www.jmcollado.com/"
+      title="Página de la Asociación Nacional de Ninjutsu"
+      target="_blank"
+      rel="noopener"
+    >
+      {% responsiveImage "_assets/img/bujinkan-collado-dojo.svg", "Logo de la Bujinkan Collado Dojo", "w-24", "lazy" %}
+    </a>
+    <a
+      href="https://www.fekm.es/"
+      title="Paǵina de la Federación Española de Kick Boxing y Muay Thai"
+      target="_blank"
+      rel="noopener"
+    >
+      {% responsiveImage "_assets/img/federacion-espanola-kickboxing-muaythai.svg", "Logo de la Federación Española de Kick Boxing y Muay Thai", "w-24", "lazy" %}
+      <span class="sr-only"
+        >Federación Española de Kick Boxing y Muay Thai</span
+      >
+    </a>
   </div>
 </footer>

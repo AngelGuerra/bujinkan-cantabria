@@ -666,12 +666,33 @@ video {
   --tw-aspect-h: 9;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 .fixed {
   position: fixed;
 }
 
 .relative {
   position: relative;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.top-0 {
+  top: 0px;
 }
 
 .z-\[1000\] {
@@ -797,6 +818,10 @@ video {
 
 .gap-0 {
   gap: 0px;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .overflow-hidden {
@@ -1016,6 +1041,14 @@ video {
 
   .sm\:bg-center {
     background-position: center;
+  }
+
+  .sm\:bg-top {
+    background-position: top;
+  }
+
+  .sm\:bg-right-top {
+    background-position: right top;
   }
 
   .sm\:text-5xl {
