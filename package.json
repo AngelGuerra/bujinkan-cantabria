@@ -1,18 +1,18 @@
 {
   "name": "bujinkan-cantabria",
   "version": "1.0.0",
-  "description": "",
+  "description": "Main page of Bujinkan Cantabria",
   "main": "index.js",
   "scripts": {
     "dev": "npm-run-all --parallel dev:*",
     "dev:11ty": "eleventy --serve",
     "dev:css": "tailwindcss -o _assets/css/tailwind.css -w",
-    "build": "npm-run-all build:css build:11ty",
+    "build": "npm-run-all build:11ty build:css",
     "build:11ty": "ELEVENTY_PRODUCTION=true eleventy",
-    "build:css": "tailwindcss -o _assets/css/tailwind.css"
+    "build:css": "tailwindcss -o _site/assets/css/tailwind.css"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ángel Guerra",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
