@@ -3,7 +3,11 @@ module.exports = {
   purge: ["./_site/**/*.html", "./_site/**/*.js"],
   darkMode: false,
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        japanese: ['"Noto Serif JP"', "serif"],
+      },
+    },
   },
   variants: {
     extend: {},

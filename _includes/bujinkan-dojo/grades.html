@@ -1,0 +1,217 @@
+<section class="p-4 pt-12 mb-12">
+  <header class="text-center mb-10">
+    <h3 class="text-4xl sm:text-5xl text-[#bf0202] mb-2">Sistema de grados</h3>
+    <!-- <p class="text-xl"></p> -->
+  </header>
+
+  <section>
+    <header class="mb-10">
+      {% responsiveImage "_assets/img/bujin/kyu.svg", "Bujin de grado Kyu", "mx-auto w-60 rounded-full border border-gray-300", "lazy" %}
+    </header>
+
+    <div class="flex flex-wrap gap-6 justify-center">
+      {% include ui/grade.html
+        grade: "10º Kyu",
+        stars: 0,
+        class: "bg-white border-b"
+      %}
+
+      {% include ui/grade.html
+        grade: "9º Kyu",
+        stars: 0,
+        class: "text-white",
+        style: "background: linear-gradient(90deg, rgba(4,120,87,1) 0%, rgba(4,120,87,1) 50%, rgba(185,28,28,1) 50%, rgba(185,28,28,1) 100%);"
+      %}
+
+      {% include ui/grade.html
+        grade: "8º Kyu",
+        stars: 1,
+        color: "#c0c0c0",
+        class: "text-white",
+        style: "background: linear-gradient(90deg, rgba(4,120,87,1) 0%, rgba(4,120,87,1) 50%, rgba(185,28,28,1) 50%, rgba(185,28,28,1) 100%);"
+      %}
+
+      {% include ui/grade.html
+        grade: "7º Kyu",
+        stars: 2,
+        color: "#c0c0c0",
+        class: "text-white",
+        style: "background: linear-gradient(90deg, rgba(4,120,87,1) 0%, rgba(4,120,87,1) 50%, rgba(185,28,28,1) 50%, rgba(185,28,28,1) 100%);"
+      %}
+
+      {% include ui/grade.html
+        grade: "6º Kyu",
+        stars: 3,
+        color: "#c0c0c0",
+        class: "text-white",
+        style: "background: linear-gradient(90deg, rgba(4,120,87,1) 0%, rgba(4,120,87,1) 50%, rgba(185,28,28,1) 50%, rgba(185,28,28,1) 100%);"
+      %}
+
+      {% include ui/grade.html
+        grade: "5º Kyu",
+        stars: 4,
+        color: "#c0c0c0",
+        class: "text-white",
+        style: "background: linear-gradient(90deg, rgba(4,120,87,1) 0%, rgba(4,120,87,1) 50%, rgba(185,28,28,1) 50%, rgba(185,28,28,1) 100%);"
+      %}
+
+      {% include ui/grade.html
+        grade: "4º Kyu",
+        stars: 1,
+        color: "#ffd700",
+        class: "text-white",
+        style: "background: linear-gradient(90deg, rgba(4,120,87,1) 0%, rgba(4,120,87,1) 50%, rgba(185,28,28,1) 50%, rgba(185,28,28,1) 100%);"
+      %}
+
+      {% include ui/grade.html
+        grade: "3º Kyu",
+        stars: 2,
+        color: "#ffd700",
+        class: "text-white",
+        style: "background: linear-gradient(90deg, rgba(4,120,87,1) 0%, rgba(4,120,87,1) 50%, rgba(185,28,28,1) 50%, rgba(185,28,28,1) 100%);"
+      %}
+
+      {% include ui/grade.html
+        grade: "2º Kyu",
+        stars: 3,
+        color: "#ffd700",
+        class: "text-white",
+        style: "background: linear-gradient(90deg, rgba(4,120,87,1) 0%, rgba(4,120,87,1) 50%, rgba(185,28,28,1) 50%, rgba(185,28,28,1) 100%);"
+      %}
+
+      {% include ui/grade.html
+        grade: "1º Kyu",
+        stars: 4,
+        color: "#ffd700",
+        class: "text-white",
+        style: "background: linear-gradient(90deg, rgba(4,120,87,1) 0%, rgba(4,120,87,1) 50%, rgba(185,28,28,1) 50%, rgba(185,28,28,1) 100%);"
+      %}
+    </div>
+  </section>
+
+  <section class="mt-12">
+    <header class="mb-10">
+      {% responsiveImage "_assets/img/bujin/dan.svg", "Bujin de grado Dan", "mx-auto w-60 rounded-full", "lazy" %}
+    </header>
+
+    <div class="flex flex-wrap gap-6 justify-center">
+      {% include ui/grade.html
+        grade: "1º Dan",
+        stars: 0,
+        class: "bg-gray-900 text-white"
+      %}
+
+      {% include ui/grade.html
+        grade: "2º Dan",
+        stars: 1,
+        color: "#c0c0c0",
+        class: "bg-gray-900 text-white"
+      %}
+
+      {% include ui/grade.html
+        grade: "3º Dan",
+        stars: 2,
+        color: "#c0c0c0",
+        class: "bg-gray-900 text-white"
+      %}
+
+      {% include ui/grade.html
+        grade: "4º Dan",
+        stars: 3,
+        color: "#c0c0c0",
+        class: "bg-gray-900 text-white"
+      %}
+    </div>
+  </section>
+
+  <section class="mt-12">
+    <header class="mb-10">
+      {% responsiveImage "_assets/img/bujin/shidoshi.svg", "Bujin de grado Shidoshi", "mx-auto w-60 rounded-full border border-gray-300", "lazy" %}
+    </header>
+
+    <div class="flex flex-wrap gap-6 justify-center">
+      {% include ui/grade.html
+        grade: "5º Dan",
+        stars: 0,
+        class: "bg-gray-900 text-white"
+      %}
+
+      {% include ui/grade.html
+        grade: "6º Dan",
+        stars: 1,
+        color: "#ffd700",
+        class: "bg-gray-900 text-white"
+      %}
+
+      {% include ui/grade.html
+        grade: "7º Dan",
+        stars: 2,
+        color: "#ffd700",
+        class: "bg-gray-900 text-white"
+      %}
+
+      {% include ui/grade.html
+        grade: "8º Dan",
+        stars: 3,
+        color: "#ffd700",
+        class: "bg-gray-900 text-white"
+      %}
+
+      {% include ui/grade.html
+        grade: "9º Dan",
+        stars: 4,
+        color: "#ffd700",
+        class: "bg-gray-900 text-white"
+      %}
+    </div>
+  </section>
+
+  <section class="mt-12">
+    <header class="mb-10">
+      {% responsiveImage "_assets/img/bujin/shihan.svg", "Bujin de grado Shihan", "mx-auto w-60 rounded-full", "lazy" %}
+    </header>
+
+    <div class="flex flex-wrap gap-6 justify-center">
+      {% include ui/grade.html
+        grade: "10º Dan",
+        stars: 0,
+        class: "bg-gray-900 text-white"
+      %}
+
+      {% include ui/grade.html
+        grade: "11º Dan",
+        stars: 1,
+        color: "#ffd700",
+        class: "bg-gray-900 text-white"
+      %}
+
+      {% include ui/grade.html
+        grade: "12º Dan",
+        stars: 2,
+        color: "#ffd700",
+        class: "bg-gray-900 text-white"
+      %}
+
+      {% include ui/grade.html
+        grade: "13º Dan",
+        stars: 3,
+        color: "#ffd700",
+        class: "bg-gray-900 text-white"
+      %}
+
+      {% include ui/grade.html
+        grade: "14º Dan",
+        stars: 4,
+        color: "#ffd700",
+        class: "bg-gray-900 text-white"
+      %}
+
+      {% include ui/grade.html
+        grade: "15º Dan",
+        stars: 5,
+        color: "#ffd700",
+        class: "bg-gray-900 text-white"
+      %}
+    </div>
+  </section>
+</section>

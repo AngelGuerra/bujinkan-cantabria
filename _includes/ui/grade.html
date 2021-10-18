@@ -1,0 +1,13 @@
+<div class="shadow mb-4 w-80 rounded-3xl">
+  <h5
+    class="p-4 rounded-t-3xl text-center text-2xl font-semibold {{class}}"
+    style="{{style}}"
+  >
+    {{grade}}
+  </h5>
+  <div class="flex justify-center gap-4 p-4 rounded-b-3xl h-16">
+    {% for i in (1..stars) %}
+        {% include ui/star.html fill: color, class: "w-8" %}
+    {% endfor %}
+  </div>
+</div>
