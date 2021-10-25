@@ -43,7 +43,10 @@
               text-center
             "
           >
-            <a class="border-r border-gray-300" href="" title="Escribir a {{instructor.name}}">
+            <span
+              class="border-r border-gray-300"
+              title="Escribir a {{instructor.name}}"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-6 w-6 mx-auto mb-2"
@@ -58,9 +61,16 @@
                   d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"
                 />
               </svg>
-              {{instructor.email}}
-            </a>
-            <a href="" title="Llamar a {{instructor.name}}">
+              <span
+                class="plain-email"
+                data-domain="{{instructor.email.domain}}"
+                data-user="{{instructor.email.user}}"
+              ></span>
+            </span>
+            <a
+              href="tel:+34{{instructor.phone}}"
+              title="Llamar a {{instructor.name}}"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-6 w-6 mx-auto mb-2"

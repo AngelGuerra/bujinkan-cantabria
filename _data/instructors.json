@@ -3,14 +3,20 @@
     "name": "Fernando Cuervas-Mons",
     "grade": "Shihan 14º DAN",
     "bg": "https://unsplash.it/800/600?image=59",
-    "phone": "615000000",
-    "email": "test@test.com"
+    "phone": "646785364",
+    "email": {
+      "user": "snomsavreuc",
+      "domain": "moc.nsm"
+    }
   },
   {
     "name": "Héctor Nieto",
-    "grade": "Shidoshi 6º DAN",
+    "grade": "Shidoshi 7º DAN",
     "bg": "https://unsplash.it/800/600?image=39",
     "phone": "615000000",
-    "email": "test@test.com"
+    "email": {
+      "user": "oteinrotceh",
+      "domain": "moc.liamg"
+    }
   }
 ]
