@@ -33,6 +33,13 @@
             {{instructor.name}}
             <small class="block">{{instructor.grade}}</small>
           </h3>
+
+          <div class="flex gap-2 p-4 pt-0">
+            {% for activity in instructor.activities %}
+            <span class="inline-block rounded text-white bg-gray-900 px-2 py-1 text-xs transform {% randomRotateClassName %}">{{activity}}</span>
+            {% endfor %}
+          </div>
+
           <div
             class="
               grid grid-cols-1

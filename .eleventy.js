@@ -137,6 +137,35 @@ const assetImageUrl = async (src = null, quality = 95, width = 696) => {
   return getAbsoluteUrl(metadata[format][0].url);
 };
 
+/**
+ * @description Genera una clase aleatoria para el atributo rotate de TailwindCSS
+ *   - `-rotate-6`
+ *   - `-rotate-3`
+ *   - `-rotate-2`
+ *   - `-rotate-1`
+ *   - `-rotate-0`
+ *   - `rotate-0`
+ *   - `rotate-1`
+ *   - `rotate-2`
+ *   - `rotate-3`
+ *   - `rotate-6`
+ * @returns {String}
+ */
+const randomRotateClassName = () => {
+  /**
+   * @description Retorna un número para la clase. TailwindCSS no tiene implementadas las clases `rotate-4` ni
+   * `rotate-5`.
+   * @returns {Number}
+   */
+  const getClassNumber = () => {
+    const randomNumber = Math.floor(Math.random() * 7);
+
+    return [4, 5].includes(randomNumber) ? getClassNumber() : randomNumber;
+  };
+
+  return `${Math.random() < 0.5 ? "" : "-"}rotate-${getClassNumber()}`;
+};
+
 module.exports = function (eleventyConfig) {
   //   eleventyConfig.setBrowserSyncConfig({
   //     callbacks: {
@@ -160,32 +189,8 @@ module.exports = function (eleventyConfig) {
     "_assets/favicons": "/",
   });
 
-  //   eleventyConfig.addWatchTarget("./_tmp/site.css");
-  //   eleventyConfig.addWatchTarget("./_tmp/site.js");
-  //   eleventyConfig.addPassthroughCopy({
-  //     "robots.txt": "./robots.txt",
-  //     "humans.txt": "./humans.txt",
-  //     ".htaccess": "./.htaccess",
-  //     "_assets/files": "./assets/files/",
-  //     "_assets/fonts": "./assets/fonts/",
-  //     "_assets/videos": "./assets/videos/",
-  //     "_assets/audios": "./assets/audios/",
-  //     "_assets/images/static": "./assets/img/",
-  //     "_assets/favicons": "/",
-  //     "_tmp/site.css": "./assets/css/site.css",
-  //     "_tmp/site.js": "./assets/js/site.js",
-  //   });
-
   eleventyConfig.addTransform("htmlmin", minifyHtml);
   eleventyConfig.addShortcode("responsiveImage", responsiveImage);
   eleventyConfig.addShortcode("assetImageUrl", assetImageUrl);
-
-  //   eleventyConfig.addShortcode("getSimpleIcon", getSimpleIcon);
-  //   eleventyConfig.addShortcode("repoInfo", repoInfo);
-  //   eleventyConfig.addLiquidShortcode("socialMediaMetaTags", socialMediaMetaTags);
-  //   eleventyConfig.addFilter("absoluteUrl", getAbsoluteUrl);
-  //   eleventyConfig.addFilter("readingTime", readingTime);
-  //   eleventyConfig.addCollection("search", getSearchCollection);
-  //   eleventyConfig.addCollection("blogTags", getBlogTagsCollection);
-  //   eleventyConfig.addCollection("solutionsByType", getSolutionsByTypeCollection);
+  eleventyConfig.addShortcode("randomRotateClassName", randomRotateClassName);
 };

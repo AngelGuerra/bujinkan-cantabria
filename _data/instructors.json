@@ -7,16 +7,18 @@
     "email": {
       "user": "snomsavreuc",
       "domain": "moc.nsm"
-    }
+    },
+    "activities": ["Ninjutsu Adultos", "Ninjutsu Juvenil", "Fitness", "Pilates"]
   },
   {
     "name": "Héctor Nieto",
     "grade": "Shidoshi 7º DAN",
     "bg": "https://unsplash.it/800/600?image=39",
-    "phone": "615000000",
+    "phone": "658903283",
     "email": {
-      "user": "rotceh",
-      "domain": "moc.tset"
-    }
+      "user": "ziur.otein.rotceh",
+      "domain": "moc.liamg"
+    },
+    "activities": ["Ninjutsu Infantil", "Yoga Adultos"]
   }
 ]
