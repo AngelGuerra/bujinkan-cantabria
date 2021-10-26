@@ -2,7 +2,7 @@
   {
     "name": "Fernando Cuervas-Mons",
     "grade": "Shihan 14º DAN",
-    "bg": "https://unsplash.it/800/600?image=59",
+    "bg": "_assets/img/instructors/ninjabox.svg",
     "phone": "646785364",
     "email": {
       "user": "snomsavreuc",
@@ -19,7 +19,7 @@
   {
     "name": "Héctor Nieto",
     "grade": "Shidoshi 7º DAN",
-    "bg": "https://unsplash.it/800/600?image=39",
+    "bg": "_assets/img/instructors/hector-1024x576.jpg",
     "phone": "658903283",
     "email": {
       "user": "ziur.otein.rotceh",

@@ -6,17 +6,18 @@
 
   <div class="flex flex-wrap items-center justify-center">
     {% for instructor in instructors %}
+      {% capture avatar %}{% assetImageUrl instructor.bg, 100, 1024 %}{% endcapture %}
     <div class="flex p-4 w-full md:w-1/2 2xl:w-1/3">
       <div class="bg-white rounded shadow flex flex-col overflow-hidden w-full">
         <div
           class="
-            bg-center bg-no-repeat bg-cover
+            bg-center bg-no-repeat bg-contain bg-gray-50
             rounded-t
             filter
             contrast-75
             aspect-w-16 aspect-h-9
           "
-          style="background-image: url({{instructor.bg}})"
+          style="background-image: url({{avatar}})"
         ></div>
         <div class="flex flex-auto flex-col">
           <h3
