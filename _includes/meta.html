@@ -1,0 +1,123 @@
+{% capture defaultImage %}{% assetImageUrl "_assets/img/logo.svg", 100, 1200 %}{% endcapture %}
+{% assign name = "Bujinkan Cantabria" %}
+<title>{{ title }} :: {{ name }}</title>
+<meta name="description" content="{{ description }}" />
+
+<meta charset="utf-8" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, user-scalable=no"
+/>
+{% comment %}
+{% if robots %}
+<meta name="robots" content="{{ robots }}" />
+{% endif %}
+{% endcomment %}
+<meta name="robots" content="noindex,nofollow" />
+
+{% comment %} Application attributes {% endcomment %}
+<meta name="application-name" content="{{ name }}" />
+{% comment %}
+  see: https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182645(v=vs.85)#link-highlighting
+{% endcomment %}
+<meta name="msapplication-tap-highlight" content="no" />
+{% comment %}
+  see: https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html
+{% endcomment %}
+<meta name="apple-mobile-web-app-title" content="{{ name }}" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta
+  name="apple-mobile-web-app-status-bar-style"
+  content="black-translucent"
+/>
+<meta name="apple-touch-fullscreen" content="yes" />
+
+{% comment %} Icons {% endcomment %}
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#bf0202" />
+<meta name="msapplication-TileColor" content="#2b5797" />
+<meta name="theme-color" content="#ffffff" />
+
+{% comment %} Language {% endcomment %}
+<meta name="language" content="es" />
+
+{% comment %} Itemprop {% endcomment %}
+<meta itemprop="name" content="{{ title }} :: {{ name }}" />
+<meta itemprop="description" content="{{ description }}" />
+<meta itemprop="image" content="{{ defaultImage }}" />
+
+{% comment %} Open Graph {% endcomment %}
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="{{ name }}" />
+<meta property="og:title" content="{{ title }}" />
+<meta property="og:description" content="{{ description }}" />
+{% comment %} <meta property="og:url" content="${getAbsoluteUrl(page.url)}" /> {% endcomment %}
+<meta property="og:locale" content="es" />
+<meta property="og:image" content="{{ defaultImage }}" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="1200" />
+<meta property="og:image:type" content="image/webp" />
+<meta property="og:image:alt" content="Logo de la Bujinkan Cantabria" />
+
+{% comment %} Twitter {% endcomment %}
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="{{ title }}" />
+<meta name="twitter:description" content="{{ description }}" />
+{% comment %} <meta name="twitter:url" content="${getAbsoluteUrl(page.url)}" /> {% endcomment %}
+<meta name="twitter:image" content="{{ defaultImage }}" />
+<meta name="twitter:image:alt" content="Logo de la Bujinkan Cantabria" />
+
+{% comment %} Google Fonts {% endcomment %}
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@600&display=swap"
+  rel="stylesheet"
+/>
+
+{% comment %} Styles {% endcomment %}
+<link rel="stylesheet" href="/assets/css/tailwind.css" />
+<link rel="stylesheet" href="/assets/css/custom.css" />
+
+{% comment %} Schema {% endcomment %}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "url": "https://bujinkancantabria.ninja/",
+    "name": "{{ name }}",
+    "slogan": "Ninjutsu Budo Taijutsu",
+    "founder": {
+      "@type": "Person",
+      "familyName": "Cuervas-Mons Cortadi",
+      "givenName": "Fernando"
+    },
+    "memberOf": {
+      "@type": "Organization",
+      "url": "https://www.jmcollado.com/",
+      "name": "Bujinkan Collado Dojo",
+    },
+    "logo" : {
+      "@type": "imageObject",
+      "url" : "{{ defaultImage }}"
+    }
+    "address" : {
+      "@type" : "PostalAddress",
+      "addressLocality" : "Sarón",
+      "addressRegion" : "Cantabria",
+      "addressCountry" : "ES",
+      "postalCode" : "39620",
+      "streetAddress" : "El Ferial, 3"
+    },
+    "contactPoint" : [{
+      "@type" : "ContactPoint",
+      "areaServed": "Cantabria",
+      "telephone" : "+34646785364",
+      "availableLanguage" : ["Spanish"],
+      "contactType" : ["info"]
+    }]
+  }
+</script>
