@@ -116,14 +116,19 @@ const responsiveImage = async function (
  * @param {String} src Ruta original de la imagen.
  * @param {Number} quality Calidad de la imagen generada.
  * @param {Number} width Ancho de la imagen generada.
+ * @param {String} format Formato de salida de la imagen generada.
  * @returns {String} URL de la imagen.
  */
-const assetImageUrl = async (src = null, quality = 95, width = 696) => {
+const assetImageUrl = async (
+  src = null,
+  quality = 95,
+  width = 696,
+  format = "webp"
+) => {
   if (!src) {
-    src = "_assets/img/logo.svg";
+    src = "_assets/img/resources/logo.svg";
   }
 
-  const format = "webp";
   const metadata = await Image(src, {
     widths: [width],
     formats: [format],
@@ -193,4 +198,5 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("responsiveImage", responsiveImage);
   eleventyConfig.addShortcode("assetImageUrl", assetImageUrl);
   eleventyConfig.addShortcode("randomRotateClassName", randomRotateClassName);
+  eleventyConfig.addFilter("absoluteUrl", getAbsoluteUrl);
 };

@@ -8,13 +8,7 @@
       "user": "snomsavreuc",
       "domain": "moc.nsm"
     },
-    "activities": [
-      "Ninjutsu Adultos",
-      "Ninjutsu Juvenil",
-      "Fitness",
-      "Pilates",
-      "Kick Boxing"
-    ]
+    "activities": ["Ninjutsu Adultos", "Ninjutsu Juvenil", "Fitness", "Pilates", "Kick Boxing"]
   },
   {
     "name": "Héctor Nieto",

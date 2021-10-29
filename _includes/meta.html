@@ -1,4 +1,4 @@
-{% capture defaultImage %}{% assetImageUrl "_assets/img/logo.svg", 100, 1200 %}{% endcapture %}
+{% capture defaultImage %}{% assetImageUrl "_assets/img/resources/logo.svg", 100, 1200 %}{% endcapture %}
 {% assign name = "Bujinkan Cantabria" %}
 <title>{{ title }} :: {{ name }}</title>
 <meta name="description" content="{{ description }}" />
@@ -38,7 +38,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 <link rel="manifest" href="/site.webmanifest" />
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#bf0202" />
-<meta name="msapplication-TileColor" content="#2b5797" />
+<meta name="msapplication-TileColor" content="#ffffff" />
 <meta name="theme-color" content="#ffffff" />
 
 {% comment %} Language {% endcomment %}
@@ -54,7 +54,7 @@
 <meta property="og:site_name" content="{{ name }}" />
 <meta property="og:title" content="{{ title }}" />
 <meta property="og:description" content="{{ description }}" />
-{% comment %} <meta property="og:url" content="${getAbsoluteUrl(page.url)}" /> {% endcomment %}
+<meta property="og:url" content="{{ page.url | absoluteUrl }}" />
 <meta property="og:locale" content="es" />
 <meta property="og:image" content="{{ defaultImage }}" />
 <meta property="og:image:width" content="1200" />
@@ -66,7 +66,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="{{ title }}" />
 <meta name="twitter:description" content="{{ description }}" />
-{% comment %} <meta name="twitter:url" content="${getAbsoluteUrl(page.url)}" /> {% endcomment %}
+<meta name="twitter:url" content="{{ page.url | absoluteUrl }}" />
 <meta name="twitter:image" content="{{ defaultImage }}" />
 <meta name="twitter:image:alt" content="Logo de la Bujinkan Cantabria" />
 
@@ -74,7 +74,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link
-  href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@600&display=swap"
+  href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Noto+Serif+JP:wght@300;400;700&display=swap"
   rel="stylesheet"
 />
 
