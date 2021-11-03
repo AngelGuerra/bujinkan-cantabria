@@ -1,4 +1,5 @@
-{% capture defaultImage %}{% assetImageUrl "_assets/img/resources/logo.svg", 100, 1200 %}{% endcapture %}
+{% comment %} {% capture defaultImage %}{% assetImageUrl "_assets/img/resources/logo.svg", 100, 1200 %}{% endcapture %} {% endcomment %}
+{% assign defaultImage = "/assets/img/static/bujinkan-cantabria-rrss.png" %}
 {% assign name = "Bujinkan Cantabria" %}
 <title>{{ title }} :: {{ name }}</title>
 <meta name="description" content="{{ description }}" />
@@ -45,7 +46,7 @@
 {% comment %} Itemprop {% endcomment %}
 <meta itemprop="name" content="{{ title }} :: {{ name }}" />
 <meta itemprop="description" content="{{ description }}" />
-<meta itemprop="image" content="{{ defaultImage }}" />
+<meta itemprop="image" content="{{ defaultImage| absoluteUrl }}" />
 
 {% comment %} Open Graph {% endcomment %}
 <meta property="og:type" content="website" />
@@ -54,9 +55,9 @@
 <meta property="og:description" content="{{ description }}" />
 <meta property="og:url" content="{{ page.url | absoluteUrl }}" />
 <meta property="og:locale" content="es" />
-<meta property="og:image" content="{{ defaultImage }}" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="1200" />
+<meta property="og:image" content="{{ defaultImage| absoluteUrl }}" />
+<meta property="og:image:width" content="1280" />
+<meta property="og:image:height" content="640" />
 <meta property="og:image:type" content="image/webp" />
 <meta property="og:image:alt" content="Logo de la Bujinkan Cantabria" />
 
@@ -65,7 +66,7 @@
 <meta name="twitter:title" content="{{ title }}" />
 <meta name="twitter:description" content="{{ description }}" />
 <meta name="twitter:url" content="{{ page.url | absoluteUrl }}" />
-<meta name="twitter:image" content="{{ defaultImage }}" />
+<meta name="twitter:image" content="{{ defaultImage | absoluteUrl }}" />
 <meta name="twitter:image:alt" content="Logo de la Bujinkan Cantabria" />
 
 {% comment %} Google Fonts {% endcomment %}
@@ -107,7 +108,7 @@
     ],
     "logo" : {
       "@type": "imageObject",
-      "url": "{{ defaultImage }}"
+      "url": "{{ defaultImage | absoluteUrl }}"
     },
     "address": {
       "@type": "PostalAddress",

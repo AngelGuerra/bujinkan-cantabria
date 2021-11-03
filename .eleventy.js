@@ -190,7 +190,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./_assets/css/tailwind.css");
   eleventyConfig.addPassthroughCopy({
     "_assets/css/": "./assets/css/",
-    "_assets/img/static": "./assets/img/",
+    "_assets/img/static/": "./assets/img/static/",
     "_assets/favicons": "/",
   });
 
