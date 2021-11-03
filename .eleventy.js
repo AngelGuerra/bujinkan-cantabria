@@ -67,9 +67,9 @@ const responsiveImage = async function (
   alt,
   className = "",
   loading = "lazy",
-  quality = 90,
-  widths = [640, 768, 1024, 1184],
-  sizes = "(max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, 1184px",
+  quality = 95,
+  widths = [640, 768, 1024, 1280, 1536],
+  sizes = "(max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1280px) 1280px, 1536px",
   outputDir = ""
 ) {
   const formats = src.endsWith(".png") ? ["png"] : ["jpeg"];
@@ -79,7 +79,7 @@ const responsiveImage = async function (
 
   /** @var {Object} metadata Imágenes generadas junto con sus datos. */
   const metadata = await Image(src, {
-    widths,
+    widths: widths.map((w) => parseInt(w, 10)),
     formats,
     svgShortCircuit: true,
     outputDir: `./_site/assets/img/${outputDir}`,

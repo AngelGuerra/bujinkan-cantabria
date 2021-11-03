@@ -6,14 +6,12 @@
 <meta charset="utf-8" />
 <meta
   name="viewport"
-  content="width=device-width, initial-scale=1, user-scalable=no"
+  content="width=device-width, initial-scale=1"
 />
-{% comment %}
+
 {% if robots %}
 <meta name="robots" content="{{ robots }}" />
 {% endif %}
-{% endcomment %}
-<meta name="robots" content="noindex,nofollow" />
 
 {% comment %} Application attributes {% endcomment %}
 <meta name="application-name" content="{{ name }}" />
@@ -95,29 +93,38 @@
       "familyName": "Cuervas-Mons Cortadi",
       "givenName": "Fernando"
     },
-    "memberOf": {
-      "@type": "Organization",
-      "url": "https://www.jmcollado.com/",
-      "name": "Bujinkan Collado Dojo"
-    },
+    "memberOf": [
+      {
+        "@type": "Organization",
+        "url": "https://www.bujinkan.com/",
+        "name": "Bujinkan",
+      },
+      {
+        "@type": "Organization",
+        "url": "https://www.jmcollado.com/",
+        "name": "Bujinkan Collado Dojo"
+      }
+    ],
     "logo" : {
       "@type": "imageObject",
-      "url" : "{{ defaultImage }}"
+      "url": "{{ defaultImage }}"
     },
-    "address" : {
-      "@type" : "PostalAddress",
-      "addressLocality" : "Sarón",
-      "addressRegion" : "Cantabria",
-      "addressCountry" : "ES",
-      "postalCode" : "39620",
-      "streetAddress" : "El Ferial, 3"
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Sarón",
+      "addressRegion": "Cantabria",
+      "addressCountry": "ES",
+      "postalCode": "39620",
+      "streetAddress": "El Ferial, 3"
     },
-    "contactPoint" : [{
-      "@type" : "ContactPoint",
-      "areaServed": "Cantabria",
-      "telephone" : "+34646785364",
-      "availableLanguage" : ["Spanish"],
-      "contactType" : ["info"]
-    }]
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "areaServed": "Cantabria",
+        "telephone": "+34646785364",
+        "availableLanguage": ["Spanish"],
+        "contactType": ["info"]
+      }
+    ]
   }
 </script>

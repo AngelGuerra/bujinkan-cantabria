@@ -1,14 +1,14 @@
 <section
   class="
     flex flex-col-reverse
-    md:flex-row
+    max-w-full
+    w-80
     overflow-hidden
     bg-white
     rounded-lg
     shadow-xl
-    my-12
     mx-auto
-    md:max-w-6xl
+    md:flex-row md:max-w-6xl md:w-auto
   "
 >
   <div class="w-full py-4 px-6 flex flex-col justify-between gap-4">
@@ -37,6 +37,7 @@
     </p>
   </div>
   <div class="h-full w-auto md:w-64">
-    {% responsiveImage "_assets/img/bujinkan-dojo/toshitsugu-takamatsu.png", "Toshitsugu Takamatsu", "inset-0 h-full w-full object-cover object-center", "eager" %}
+    {% assign widths = "320,210" | split: ',' %}
+    {% responsiveImage "_assets/img/bujinkan-dojo/toshitsugu-takamatsu.png", "Toshitsugu Takamatsu", "inset-0 h-full w-full object-cover object-center", "eager", 95, widths, "(max-width: 768px) 320px, 210px" %}
   </div>
 </section>
