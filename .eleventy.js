@@ -77,11 +77,6 @@ const responsiveImage = async function (
   formats.unshift("avif");
   formats.unshift("svg");
 
-  if (!alt) {
-    alt = "";
-  }
-  console.log(src, alt);
-
   /** @var {Object} metadata Imágenes generadas junto con sus datos. */
   const metadata = await Image(src, {
     widths: widths.map((w) => parseInt(w, 10)),

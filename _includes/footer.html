@@ -17,25 +17,13 @@
   </p>
 
   <div class="flex flex-row justify-center items-center gap-6">
-    <a
-      href="https://www.jmcollado.com/"
-      title="Página de la Asociación Nacional de Ninjutsu"
-      target="_blank"
-      rel="noopener"
-    >
-      {% responsiveImage "_assets/img/resources/bujinkan-collado-dojo.svg", "Logo de la Bujinkan Collado Dojo", "w-24", "lazy" %}
-    </a>
-    <a
-      href="https://www.fekm.es/"
-      title="Paǵina de la Federación Española de Kick Boxing y Muay Thai"
-      target="_blank"
-      rel="noopener"
-    >
-      {% responsiveImage "_assets/img/federacion-espanola-kickboxing-muaythai.svg", "Logo de la FEKM", "w-24", "lazy" %}
-      <span class="sr-only"
-        >Federación Española de Kick Boxing y Muay Thai</span
-      >
-    </a>
+    {% comment %}
+    Sacado a parciales porque si dejo el código sólo en este archivo, con
+    eleventy 1.0.0-beta.3 da error la generación de la segunda imagen.
+    Básicamente se hace un lío con los atributos pasados por parámetro.
+    {% endcomment %}
+    {% include "footer/bcd_logo.html" %}
+    {% include "footer/fekm_logo.html" %}
   </div>
 
   <div class="flex flex-row justify-center items-center gap-6 mt-6">
