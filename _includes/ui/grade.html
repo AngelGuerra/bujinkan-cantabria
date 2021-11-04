@@ -10,7 +10,7 @@
   {% endif %}
   <div class="flex justify-center gap-4 p-4 rounded-b-3xl h-16">
     {% for i in (1..stars) %}
-        {% include ui/star.html fill: color, class: "w-8" %}
+        {% include "ui/star.html" fill: color, class: "w-8" %}
     {% endfor %}
   </div>
 </div>

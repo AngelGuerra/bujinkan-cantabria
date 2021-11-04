@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    {% include meta.html %}
+    {% include "meta.html" %}
   </head>
   <body class="font-sans min-h-screen flex flex-col">
     <!-- Header -->
-    {% include header.html %}
+    {% include "header.html" %}
 
     <!-- Main -->
-    <main class="flex-grow">{{ content | safe }}</main>
+    <main class="flex-grow">{{ content }}</main>
 
     <!-- Footer -->
-    {% include footer.html %}
+    {% include "footer.html" %}
   </body>
 </html>
