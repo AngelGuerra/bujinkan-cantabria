@@ -1,9 +1,7 @@
 const plugin = require("tailwindcss/plugin");
 
 module.exports = {
-  mode: "jit",
-  purge: ["./_site/**/*.html", "./_site/**/*.js"],
-  darkMode: false,
+  content: ["./_site/**/*.html", "./_site/**/*.js"],
   theme: {
     extend: {
       fontFamily: {
@@ -43,9 +41,6 @@ module.exports = {
         ],
       },
     },
-  },
-  variants: {
-    extend: {},
   },
   plugins: [
     require("@tailwindcss/aspect-ratio"),
