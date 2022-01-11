@@ -1,6 +1,6 @@
-<section class="p-4 py-36 border-t border-b border-[#bf0202]">
+<section class="p-4 py-36 border-t border-b border-bujinkan-red">
   <header class="text-center mb-10">
-    <h2 class="text-4xl sm:text-5xl text-[#bf0202] mb-2">Instructores</h2>
+    <h2 class="text-4xl sm:text-5xl text-bujinkan-red mb-2">Instructores</h2>
     <!-- <p class="text-xl"></p> -->
   </header>
 
@@ -37,7 +37,7 @@
 
           <div class="flex flex-wrap gap-2 p-4 pt-0 items-center justify-center">
             {% for activity in instructor.activities %}
-            <span class="inline-block rounded text-white bg-[#2d2d2d] px-2 py-1 text-xs {% randomRotateClassName %}">{{activity}}</span>
+            <span class="inline-block rounded text-white bg-bujinkan-dark px-2 py-1 text-xs {% randomRotateClassName %}">{{activity}}</span>
             {% endfor %}
           </div>
 
@@ -84,7 +84,7 @@
             <a
               href="tel:+34{{instructor.phone}}"
               title="Llamar a {{instructor.name}}"
-              class="transition-colors hover:text-[#bf0202]"
+              class="transition-colors hover:text-bujinkan-red"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

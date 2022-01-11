@@ -4,6 +4,10 @@ module.exports = {
   content: ["./_site/**/*.html", "./_site/**/*.js"],
   theme: {
     extend: {
+      colors: {
+        "bujinkan-red": "#bf0202",
+        "bujinkan-dark": "#2d2d2d",
+      },
       fontFamily: {
         sans: [
           "Montserrat",

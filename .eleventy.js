@@ -10,7 +10,7 @@ const { URL } = require("url");
 const getAbsoluteUrl = (url) => {
   const base = process.env.ELEVENTY_PRODUCTION
     ? "https://bujinkancantabria.ninja"
-    : "http://localhost:8081";
+    : "http://localhost:8080";
 
   try {
     return new URL(url, base).toString();

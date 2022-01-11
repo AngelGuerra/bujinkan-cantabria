@@ -6,22 +6,22 @@
   "scripts": {
     "dev": "npm-run-all --parallel dev:*",
     "dev:11ty": "eleventy --serve",
-    "dev:css": "npx tailwindcss -i _assets/css/styles.css -o _assets/css/tailwind.css --watch",
+    "dev:css": "npx tailwindcss -i _assets/css/styles.pcss -o _assets/css/tailwind.css --watch",
     "build": "npm-run-all build:11ty build:css",
     "build:11ty": "ELEVENTY_PRODUCTION=true eleventy",
-    "build:css": "npx tailwindcss -i _assets/css/styles.css -o _site/assets/css/tailwind.css"
+    "build:css": "npx tailwindcss -i _assets/css/styles.pcss -o _site/assets/css/tailwind.css"
   },
   "keywords": [],
   "author": "Ángel Guerra",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.0-beta.8",
+    "@11ty/eleventy": "^1.0.0",
     "@11ty/eleventy-img": "^1.0.0",
     "@tailwindcss/aspect-ratio": "^0.4.0",
-    "autoprefixer": "^10.4.0",
+    "autoprefixer": "^10.4.2",
     "html-minifier": "^4.0.0",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.4",
-    "tailwindcss": "^3.0.0"
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.13"
   }
 }
