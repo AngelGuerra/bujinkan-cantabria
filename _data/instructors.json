@@ -8,13 +8,20 @@
       "user": "snomsavreuc",
       "domain": "moc.nsm"
     },
-    "activities": ["Ninjutsu Adultos", "Ninjutsu Juvenil", "Fitness", "Pilates", "Kick Boxing"]
+    "activities": [
+      "Ninjutsu Adultos",
+      "Ninjutsu Juvenil",
+      "Fitness",
+      "Pilates",
+      "Kick Boxing"
+    ]
   },
   {
     "name": "Héctor Nieto",
     "grade": "Shidoshi 7º DAN",
     "bg": "_assets/img/instructors/hector-1024x576.jpg",
     "phone": "658903283",
+    "telegram": "Hekutorun",
     "email": {
       "user": "ziur.otein.rotceh",
       "domain": "moc.liamg"

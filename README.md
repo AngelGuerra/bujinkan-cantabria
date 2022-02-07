@@ -13,7 +13,7 @@ Esta web recoje información acerca de la [Bujinkan](https://es.wikipedia.org/wi
 Esta página cuenta con los siguientes ingredientes:
 
 - [11ty](https://www.11ty.dev/): SSG.
-- [Tailwind](https://tailwindcss.com/): Librería de estilos.
+- [Tailwind CSS](https://tailwindcss.com/): Librería de estilos.
 
 ```bash
 # Instalación de dependencias (node > 16.x)

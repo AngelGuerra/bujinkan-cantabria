@@ -143,7 +143,7 @@ const assetImageUrl = async (
 };
 
 /**
- * @description Genera una clase aleatoria para el atributo rotate de TailwindCSS
+ * @description Genera una clase aleatoria para el atributo rotate de Tailwind CSS
  *   - `-rotate-6`
  *   - `-rotate-3`
  *   - `-rotate-2`
@@ -158,7 +158,7 @@ const assetImageUrl = async (
  */
 const randomRotateClassName = () => {
   /**
-   * @description Retorna un número para la clase. TailwindCSS no tiene implementadas las clases `rotate-4` ni
+   * @description Retorna un número para la clase. Tailwind CSS no tiene implementadas las clases `rotate-4` ni
    * `rotate-5`.
    * @returns {Number}
    */

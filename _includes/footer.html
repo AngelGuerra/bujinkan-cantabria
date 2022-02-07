@@ -1,9 +1,9 @@
-<footer id="footer" class="bg-gray-200 p-8 border-t-2 border-bujinkan-red">
-  <p class="text-center mb-6">
+<footer id="footer" class="border-t-2 border-bujinkan-red bg-gray-200 p-8">
+  <p class="mb-6 text-center">
     <a
       href="/en-proceso-de-construccion/"
       title="Estamos trabajando en ello"
-      class="underline hover:text-bujinkan-red transition-colors"
+      class="underline transition-colors hover:text-bujinkan-red"
       >En proceso de construcción</a
     >
     con 🖤 por un
@@ -16,21 +16,21 @@
     >
   </p>
 
-  <div class="flex flex-row justify-center items-center gap-6">
+  <div class="flex flex-row items-center justify-center gap-6">
     {% comment %}
-    Sacado a parciales porque si dejo el código sólo en este archivo, con
-    eleventy 1.0.0-beta.3 da error la generación de la segunda imagen.
-    Básicamente se hace un lío con los atributos pasados por parámetro.
+    Sacado a parciales porque si dejo el código sólo en este
+    archivo, con eleventy 1.0.0-beta.3 da error la generación de la segunda
+    imagen. Básicamente se hace un lío con los atributos pasados por parámetro.
     {% endcomment %}
     {% include "footer/bcd_logo.html" %}
     {% include "footer/fekm_logo.html" %}
   </div>
 
-  <div class="flex flex-row justify-center items-center gap-6 mt-6">
+  <div class="mt-6 flex flex-row items-center justify-center gap-6">
     <a
       href="/politica-de-cookies/"
       title="Política de No Cookies"
-      class="text-sm underline hover:text-bujinkan-red transition-colors"
+      class="text-sm underline transition-colors hover:text-bujinkan-red"
       >Política de <strong>NO</strong> Cookies</a
     >
   </div>
