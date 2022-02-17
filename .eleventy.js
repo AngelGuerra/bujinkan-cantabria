@@ -185,6 +185,19 @@ module.exports = function (eleventyConfig) {
   //     },
   //   });
 
+  const fonts = {
+    "_assets/fonts/Montserrat/static/Montserrat-Light.ttf":
+      "./assets/fonts/Montserrat-Light.ttf",
+    "_assets/fonts/Montserrat/static/Montserrat-Regular.ttf":
+      "./assets/fonts/Montserrat-Regular.ttf",
+    "_assets/fonts/Montserrat/static/Montserrat-Bold.ttf":
+      "./assets/fonts/Montserrat-Bold.ttf",
+    "_assets/fonts/Montserrat/static/Montserrat-Light.ttf":
+      "./assets/fonts/Montserrat-Light.ttf",
+    "_assets/fonts/Montserrat/static/Montserrat-Regular.ttf":
+      "./assets/fonts/Montserrat-Regular.ttf",
+  };
+
   eleventyConfig.addLayoutAlias("default", "layouts/default.html");
   eleventyConfig.setTemplateFormats(["html"]);
   eleventyConfig.addWatchTarget("./_assets/css/tailwind.css");
@@ -192,6 +205,7 @@ module.exports = function (eleventyConfig) {
     "_assets/css/": "./assets/css/",
     "_assets/img/static/": "./assets/img/static/",
     "_assets/favicons": "/",
+    ...fonts,
   });
 
   eleventyConfig.addTransform("htmlmin", minifyHtml);
