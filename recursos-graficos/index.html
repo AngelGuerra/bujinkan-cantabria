@@ -5,15 +5,15 @@ description: Recursos para el diseño de actividades relacionadas con la asociac
 robots: noindex
 ---
 
-<section class="p-4 py-12 mb-12 max-w-6xl mx-auto">
-  <header class="text-center mb-10">
-    <h1 class="text-4xl sm:text-5xl text-bujinkan-red mb-2">Recursos gráficos</h1>
+<section class="container mx-auto mb-12 p-4 py-12">
+  <header class="mb-10 text-center">
+    <h1 class="mb-2 text-4xl text-bujinkan-red sm:text-5xl">
+      Recursos gráficos
+    </h1>
   </header>
 
-  <h2 class="text-3xl text-center mb-2">Logos</h2>
-
   {% comment %} Logo de Cuervas-Mons Dojo {% endcomment %}
-  <div class="flex flex-wrap items-center justify-center">
+  <div class="mb-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
     {% include "ui/resource.html"
       resource: "_assets/img/resources/logo.svg",
       thumbnailBgClasses: "bg-gray-50",
@@ -38,10 +38,8 @@ robots: noindex
       formats: "svg, png",
       size: "2000x2000"
     %}
-  </div>
 
-  {% comment %} Logo de Bujinkan Dojo {% endcomment %}
-  <div class="flex flex-wrap items-center justify-center">
+    {% comment %} Logo de Bujinkan Dojo {% endcomment %}
     {% include "ui/resource.html"
       resource: "_assets/img/resources/bujinkan-logo.svg",
       thumbnailBgClasses: "bg-gray-50",
@@ -66,10 +64,8 @@ robots: noindex
       formats: "svg, png",
       size: "2000x2000"
     %}
-  </div>
 
-  {% comment %} Ryuha {% endcomment %}
-  <div class="flex flex-wrap items-center justify-center">
+    {% comment %} Ryuha {% endcomment %}
     {% include "ui/resource.html"
       resource: "_assets/img/resources/ryuha.svg",
       thumbnailBgClasses: "bg-bujinkan-dark",
