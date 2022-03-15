@@ -5,8 +5,8 @@ description: Gimnasio en Sarón, Cantabria, de Ninjutsu, fitness, pilates, yoga 
 ---
 
 <section class="bg-gray-50 p-4 py-16">
-  <section class="container mx-auto grid grid-cols-1 gap-8 xl:grid-cols-2">
-    <header class="flex items-center justify-center xl:justify-start">
+  <section class="container mx-auto grid grid-cols-1 gap-8">
+    <header class="flex items-center justify-center">
       <section
         class="flex w-fit max-w-full flex-col items-center overflow-hidden rounded-lg bg-white shadow-xl md:flex-row"
       >
@@ -60,41 +60,6 @@ description: Gimnasio en Sarón, Cantabria, de Ninjutsu, fitness, pilates, yoga 
         </div>
       </section>
     </header>
-    <section class="flex flex-col items-center justify-center xl:justify-end">
-      <header class="my-8 text-center block xl:hidden">
-        <h2 class="text-3xl text-bujinkan-red sm:text-4xl">
-          Tarifas
-        </h2>
-      </header>
-      <div
-        class="grid w-full max-w-[40rem] grid-cols-1 overflow-hidden rounded-lg bg-white shadow-xl sm:grid-cols-3"
-      >
-        <div
-          class="hidden h-16 items-center justify-between bg-bujinkan-dark px-3 py-2 font-bold text-white sm:flex"
-        >
-          Actividad
-        </div>
-        <div
-          class="hidden h-16 items-center justify-end bg-bujinkan-dark px-3 py-2 font-bold text-white sm:flex"
-        >
-          Mes completo
-        </div>
-        <div
-          class="hidden h-16 items-center justify-end bg-bujinkan-dark px-3 py-2 font-bold text-white sm:flex"
-        >
-          Medio mes
-        </div>
-    
-        {% include "dojos/fee.html" activity: "Ninjutsu adulto", monthly: "47 €", biweekly: "35 €", even: true, top: true, bottom: false %}
-        {% include "dojos/fee.html" activity: "Ninjutsu juvenil", monthly: "42 €", biweekly: "30 €", even: false, top: false, bottom: false %}
-        {% include "dojos/fee.html" activity: "Ninjutsu infantil", monthly: "42 €", biweekly: "30 €", even: true, top: false, bottom: false %}
-        {% include "dojos/fee.html" activity: "Fitness", monthly: "42 €", biweekly: "30 €", even: false, top: false, bottom: false %}
-        {% include "dojos/fee.html" activity: "Pilates", monthly: "42 €", biweekly: "30 €", even: true, top: false, bottom: false %}
-        {% include "dojos/fee.html" activity: "Yoga (1 día)", monthly: "32 €", biweekly: "20 €", even: false, top: false, bottom: false %}
-        {% include "dojos/fee.html" activity: "Yoga (2 días)", monthly: "42 €", biweekly: "30 €", even: true, top: false, bottom: false %}
-        {% include "dojos/fee.html" activity: "Pilates + Fitness", monthly: "64 €", biweekly: "50 €", even: false, top: false, bottom: true %}
-      </div>
-    </section>
   </section>
 </section>
 
