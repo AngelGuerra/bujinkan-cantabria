@@ -1,0 +1,115 @@
+---
+layout: default
+title: Gimnasio Cuervas-Mons de Ninjutsu Budo Taijutsu
+description: Gimnasio en Sarón, Cantabria, de Ninjutsu, fitness, pilates, yoga y otras especialidades
+---
+
+<section class="bg-gray-50 p-4 py-16">
+  <section class="container mx-auto grid grid-cols-1 gap-8 xl:grid-cols-2">
+    <header class="flex items-center justify-center xl:justify-start">
+      <section
+        class="flex w-fit max-w-full flex-col items-center overflow-hidden rounded-lg bg-white shadow-xl md:flex-row"
+      >
+        <div class="h-64 w-64">
+          {% assign widths = "320" | split: ',' %}
+          {% responsiveImage "_assets/img/cuervas-mons.svg", "Logo del Gimnasio", "inset-0 h-full w-full object-cover object-center", "eager", 95, widths, "(max-width: 768px) 320px, 320px" %}
+        </div>
+        <div class="flex max-w-full w-96 flex-col justify-start gap-4 px-6 py-4">
+          <h1
+            class="truncate text-lg font-semibold leading-tight text-bujinkan-red"
+          >
+            Gimnasio Cuervas-Mons
+          </h1>
+          <div>
+            <address>
+              El Ferial, 3<br />
+              39620 Sarón, Cantabria<br />
+              Fernando:
+              <a
+                href="tel:+34646785364"
+                title="Teléfono de Fernando Cuervas-Mons"
+                class="underline"
+                >646785364</a
+              >
+            </address>
+          </div>
+
+          {% assign tags = "Ninjutsu,Pilates,Fitness,Yoga" | split: ',' %}
+          <div class="flex flex-wrap items-center justify-start gap-2">
+            {% for tag in tags %}
+              <span
+                class="{% randomRotateClassName %} inline-block rounded bg-bujinkan-dark px-2 py-1 text-xs text-white"
+                >{{tag}}</span
+              >
+            {% endfor %}
+          </div>
+
+          <p
+            class="mt-auto text-sm font-semibold uppercase tracking-wide text-gray-700"
+          >
+            Ver en
+            <a
+              href="https://www.google.es/maps/place/Gimnasio+Cuervas-Mons/@43.3255362,-3.8521905,17z/data=!3m1!4b1!4m5!3m4!1s0xd49313e8490fd11:0x3c261613722b1d58!8m2!3d43.3255404!4d-3.8499923"
+              title="Ubicación en Google Maps"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="underline"
+              >Maps</a
+            >
+          </p>
+        </div>
+      </section>
+    </header>
+    <section class="flex flex-col items-center justify-center xl:justify-end">
+      <header class="my-8 text-center block xl:hidden">
+        <h2 class="text-3xl text-bujinkan-red sm:text-4xl">
+          Tarifas
+        </h2>
+      </header>
+      <div
+        class="grid w-full max-w-[40rem] grid-cols-1 overflow-hidden rounded-lg bg-white shadow-xl sm:grid-cols-3"
+      >
+        <div
+          class="hidden h-16 items-center justify-between bg-bujinkan-dark px-3 py-2 font-bold text-white sm:flex"
+        >
+          Actividad
+        </div>
+        <div
+          class="hidden h-16 items-center justify-end bg-bujinkan-dark px-3 py-2 font-bold text-white sm:flex"
+        >
+          Mes completo
+        </div>
+        <div
+          class="hidden h-16 items-center justify-end bg-bujinkan-dark px-3 py-2 font-bold text-white sm:flex"
+        >
+          Medio mes
+        </div>
+    
+        {% include "dojos/fee.html" activity: "Ninjutsu adulto", monthly: "47 €", biweekly: "35 €", even: true, top: true, bottom: false %}
+        {% include "dojos/fee.html" activity: "Ninjutsu juvenil", monthly: "42 €", biweekly: "30 €", even: false, top: false, bottom: false %}
+        {% include "dojos/fee.html" activity: "Ninjutsu infantil", monthly: "42 €", biweekly: "30 €", even: true, top: false, bottom: false %}
+        {% include "dojos/fee.html" activity: "Fitness", monthly: "42 €", biweekly: "30 €", even: false, top: false, bottom: false %}
+        {% include "dojos/fee.html" activity: "Pilates", monthly: "42 €", biweekly: "30 €", even: true, top: false, bottom: false %}
+        {% include "dojos/fee.html" activity: "Yoga (1 día)", monthly: "32 €", biweekly: "20 €", even: false, top: false, bottom: false %}
+        {% include "dojos/fee.html" activity: "Yoga (2 días)", monthly: "42 €", biweekly: "30 €", even: true, top: false, bottom: false %}
+        {% include "dojos/fee.html" activity: "Pilates + Fitness", monthly: "64 €", biweekly: "50 €", even: false, top: false, bottom: true %}
+      </div>
+    </section>
+  </section>
+</section>
+
+<section class="container mx-auto px-4 py-6">
+  <header class="mb-10 text-center">
+    <h2 class="mb-2 text-3xl text-bujinkan-red sm:text-4xl">
+      Horario de actividades
+    </h2>
+  </header>
+
+  <div class="grid grid-cols-1 xl:grid-cols-5 gap-4">
+    {% include "dojos/schedule.html" dayOfWeek: "Lunes", key: "monday" %}
+    {% include "dojos/schedule.html" dayOfWeek: "Martes", key: "tuesday" %}
+    {% include "dojos/schedule.html" dayOfWeek: "Miércoles", key: "wednesday" %}
+    {% include "dojos/schedule.html" dayOfWeek: "Jueves", key: "thursday" %}
+    {% include "dojos/schedule.html" dayOfWeek: "Viernes", key: "friday" %}
+  </div>
+</section>

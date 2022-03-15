@@ -9,11 +9,9 @@
       "domain": "moc.nsm"
     },
     "activities": [
-      "Ninjutsu Adultos",
-      "Ninjutsu Juvenil",
+      "Ninjutsu",
       "Fitness",
-      "Pilates",
-      "Kick Boxing"
+      "Pilates"
     ]
   },
   {
@@ -26,6 +24,6 @@
       "user": "ziur.otein.rotceh",
       "domain": "moc.liamg"
     },
-    "activities": ["Ninjutsu Infantil", "Yoga Adultos"]
+    "activities": ["Ninjutsu Infantil", "Yoga"]
   }
 ]

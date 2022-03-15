@@ -1,21 +1,70 @@
 <header class="sticky top-0 z-[1000] w-full bg-white p-4 shadow">
   <nav class="container mx-auto w-full">
-    <ul class="flex items-center justify-between gap-2 sm:gap-12">
-      <li
-        class="w-1/3 text-center font-light transition-colors hover:text-bujinkan-red sm:w-auto sm:text-2xl"
+    <div class="flex items-center justify-between gap-2 sm:gap-12">
+      <ul>
+        <li
+          class="text-center font-light transition-colors hover:text-bujinkan-red sm:w-auto sm:text-xl"
+        >
+          <a href="/" title="Ir a la página principal">
+            {% responsiveImage "_assets/img/resources/logo.svg", "Logo de la Bujinkan Cantabria", "w-20 mx-auto sm:w-24", "eager" %}
+            <span class="sr-only">Bujinkan Cantabria</span>
+          </a>
+        </li>
+      </ul>
+      <ul
+        class="flex flex-col items-end justify-end gap-4 sm:flex-row sm:items-center sm:gap-8"
       >
-        <a href="/" title="Ir a la página principal">
-          {% responsiveImage "_assets/img/resources/logo.svg", "Logo de la Bujinkan", "w-16 mx-auto sm:w-24", "eager" %}
-          <span class="sr-only">Bujinkan Cantabria</span>
-        </a>
-      </li>
-      <li
-        class="w-1/3 text-center font-light transition-colors hover:text-bujinkan-red sm:w-auto sm:text-2xl"
-      >
-        <a href="/bujinkan-dojo" title="Información sobre la Bujinkan">
-          Bujinkan Dojo
-        </a>
-      </li>
-    </ul>
+        <li
+          class="text-center font-light transition-colors hover:text-bujinkan-red sm:w-auto sm:text-xl"
+        >
+          <a
+            href="/dojos/gimnasio-cuervas-mons"
+            title="Información sobre el Gimnasio Cuervas-Mons"
+            class="flex items-center gap-1"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4 sm:hidden"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+            Cuervas-Mons Dojo
+          </a>
+        </li>
+        <li
+          class="text-center font-light transition-colors hover:text-bujinkan-red sm:w-auto sm:text-xl"
+        >
+          <a
+            href="/bujinkan-dojo"
+            title="Información sobre la Bujinkan"
+            class="flex items-center gap-1"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4 sm:hidden"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+            Bujinkan Dojo
+          </a>
+        </li>
+      </ul>
+    </div>
   </nav>
 </header>
