@@ -8,11 +8,7 @@
       "user": "snomsavreuc",
       "domain": "moc.nsm"
     },
-    "activities": [
-      "Ninjutsu",
-      "Fitness",
-      "Pilates"
-    ]
+    "activities": ["Ninjutsu", "Kick Boxing", "Fitness", "Pilates"]
   },
   {
     "name": "Héctor Nieto",

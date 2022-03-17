@@ -15,6 +15,11 @@
     "bg": "bg-amber-800"
   },
   {
+    "key": "kick-boxing",
+    "name": "Kick Boxing",
+    "bg": "bg-rose-800"
+  },
+  {
     "key": "yoga",
     "name": "Yoga",
     "bg": "bg-pink-800"

@@ -24,6 +24,11 @@
       "activity": "fitness",
       "schedule": "19:00 - 20:00",
       "suffix": ""
+    },
+    {
+      "activity": "kick-boxing",
+      "schedule": "20:00 - 21:30",
+      "suffix": ""
     }
   ],
   "tuesday": [
@@ -82,6 +87,11 @@
     {
       "activity": "fitness",
       "schedule": "19:00 - 20:00",
+      "suffix": ""
+    },
+    {
+      "activity": "kick-boxing",
+      "schedule": "20:00 - 21:30",
       "suffix": ""
     }
   ],
