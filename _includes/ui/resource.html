@@ -2,7 +2,7 @@
 {% assign formatsCollection = formats | split: ", " %}
 
 <div class="flex w-full">
-  <div class="bg-white rounded shadow flex flex-col overflow-hidden w-full">
+  <div class="flex w-full flex-col overflow-hidden rounded bg-white shadow">
     <div
       class="
         bg-center bg-no-repeat bg-contain {{thumbnailBgClasses}}
@@ -13,39 +13,21 @@
     ></div>
     <div class="flex flex-auto flex-col">
       <p
-        class="text-xl font-light tracking-wider uppercase mb-4 p-4 text-center"
+        class="mb-4 p-4 text-center text-xl font-light uppercase tracking-wider"
       >
         {{title}}
       </p>
 
-      <div class="flex flex-wrap gap-2 p-4 pt-0 items-center justify-center">
-      {% for format in formatsCollection %}
-        <span
-          class="
-            inline-block
-            rounded
-            text-white
-            bg-bujinkan-dark
-            px-2
-            py-1
-            text-xs
-            {% randomRotateClassName %}
-          "
-          >{{ format }}</span
-        >
+      <div class="flex flex-wrap items-center justify-center gap-2 p-4 pt-0">
+        {% for format in formatsCollection %}
+          <span
+            class="{% randomRotateClassName %} inline-block rounded bg-bujinkan-dark px-2 py-1 text-xs text-white"
+            >{{ format }}</span
+          >
         {% endfor %}
         <span
-            class="
-            inline-block
-            rounded
-            text-white
-            bg-bujinkan-dark
-            px-2
-            py-1
-            text-xs
-            {% randomRotateClassName %}
-            "
-            >{{ size }}</span
+          class="{% randomRotateClassName %} inline-block rounded bg-bujinkan-dark px-2 py-1 text-xs text-white"
+          >{{ size }}</span
         >
       </div>
 
@@ -59,17 +41,17 @@
           lg:grid-cols-{{formatsCollection | size}} lg:gap-0
         "
       >
-      {% for format in formatsCollection %}
-      {% capture file %}{% assetImageUrl resource, 100, width, format %}{% endcapture %}
+        {% for format in formatsCollection %}
+        {% capture file %}{% assetImageUrl resource, 100, width, format %}{% endcapture %}
         <a
           href="{{ file }}"
           title="Descargar el recurso"
-          class="transition-colors hover:text-bujinkan-red uppercase"
+          class="uppercase transition-colors hover:text-bujinkan-red"
           download
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6 mx-auto"
+            class="mx-auto h-6 w-6"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"

@@ -1,16 +1,16 @@
-<div class="shadow mb-4 w-80 rounded-3xl">
+<div class="mb-4 w-40 rounded-3xl shadow">
   <h5
-    class="p-4 rounded-t-3xl text-center text-2xl font-semibold {{class}}"
+    class="p-4 rounded-t-2xl text-center text-xl font-semibold {{class}}"
     style="{{style}}"
   >
     {{grade}}
   </h5>
   {% if text %}
-    <p class="py-4 text-center border-b sr-only">{{text}}</p>
+    <p class="sr-only border-b py-4 text-center">{{text}}</p>
   {% endif %}
-  <div class="flex justify-center gap-4 p-4 rounded-b-3xl h-16">
+  <div class="flex h-16 justify-center gap-4 rounded-b-3xl p-4">
     {% for i in (1..stars) %}
-        {% include "ui/star.html" fill: color, class: "w-8" %}
+      {% include "ui/star.html" fill: color, class: "w-4" %}
     {% endfor %}
   </div>
 </div>

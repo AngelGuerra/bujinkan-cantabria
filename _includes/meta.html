@@ -1,4 +1,3 @@
-{% comment %} {% capture defaultImage %}{% assetImageUrl "_assets/img/resources/logo.svg", 100, 1200 %}{% endcapture %} {% endcomment %}
 {% assign defaultImage = "/assets/img/static/bujinkan-cantabria-rrss.png" %}
 {% assign name = "Bujinkan Cantabria" %}
 <title>{{ title }} :: {{ name }}</title>
@@ -11,17 +10,16 @@
 />
 
 {% if robots %}
-<meta name="robots" content="{{ robots }}" />
+  <meta name="robots" content="{{ robots }}" />
 {% endif %}
-
 {% comment %} Application attributes {% endcomment %}
 <meta name="application-name" content="{{ name }}" />
 {% comment %}
-  see: https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182645(v=vs.85)#link-highlighting
+see: https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182645(v=vs.85)#link-highlighting
 {% endcomment %}
 <meta name="msapplication-tap-highlight" content="no" />
 {% comment %}
-  see: https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html
+see: https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html
 {% endcomment %}
 <meta name="apple-mobile-web-app-title" content="{{ name }}" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -99,7 +97,7 @@
         "name": "Bujinkan Collado Dojo"
       }
     ],
-    "logo" : {
+    "logo": {
       "@type": "imageObject",
       "url": "{{ defaultImage | absoluteUrl }}"
     },

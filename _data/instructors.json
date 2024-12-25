@@ -3,23 +3,22 @@
     "name": "Fernando Cuervas-Mons",
     "grade": "Shihan 14º DAN",
     "bg": "_assets/img/instructors/ninjabox.svg",
-    "phone": "646785364",
+    "phone": {
+      "number": "+34646785364",
+      "label": "646 785 364"
+    },
     "email": {
       "user": "snomsavreuc",
       "domain": "moc.nsm"
     },
-    "activities": ["Ninjutsu", "Kenjutsu", "Kick Boxing", "Fitness", "Pilates"]
+    "activities": ["Ninjutsu", "Kick Boxing", "Fitness", "Pilates"]
   },
   {
-    "name": "Héctor Nieto",
-    "grade": "Shidoshi 7º DAN",
-    "bg": "_assets/img/instructors/hector-1024x576.jpg",
-    "phone": "658903283",
-    "telegram": "Hekutorun",
-    "email": {
-      "user": "ziur.otein.rotceh",
-      "domain": "moc.liamg"
-    },
-    "activities": ["Ninjutsu Infantil", "Yoga"]
+    "name": "Iñigo Cuervas-Mons",
+    "grade": "Shidoshi Ho",
+    "bg": "_assets/img/instructors/ninjabox.svg",
+    "phone": null,
+    "email": null,
+    "activities": ["Ninjutsu Infantil"]
   }
 ]

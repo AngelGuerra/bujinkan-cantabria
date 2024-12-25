@@ -4,7 +4,7 @@ title: Gimnasio Cuervas-Mons de Ninjutsu Budo Taijutsu
 description: Gimnasio en Sarón, Cantabria, de Ninjutsu, fitness, pilates, yoga y otras especialidades
 ---
 
-<section class="bg-gray-50 p-4 py-16">
+<section class="p-4 py-16">
   <section class="container mx-auto grid grid-cols-1 gap-8">
     <header class="flex items-center justify-center">
       <section
@@ -14,7 +14,9 @@ description: Gimnasio en Sarón, Cantabria, de Ninjutsu, fitness, pilates, yoga 
           {% assign widths = "320" | split: ',' %}
           {% responsiveImage "_assets/img/cuervas-mons.svg", "Logo del Gimnasio", "inset-0 h-full w-full object-cover object-center", "eager", 95, widths, "(max-width: 768px) 320px, 320px" %}
         </div>
-        <div class="flex max-w-full w-96 flex-col justify-start gap-4 px-6 py-4">
+        <div
+          class="flex w-96 max-w-full flex-col justify-start gap-4 px-6 py-4"
+        >
           <h1
             class="truncate text-lg font-semibold leading-tight text-bujinkan-red"
           >
@@ -29,18 +31,19 @@ description: Gimnasio en Sarón, Cantabria, de Ninjutsu, fitness, pilates, yoga 
                 href="tel:+34646785364"
                 title="Teléfono de Fernando Cuervas-Mons"
                 class="underline"
-                >646785364</a
+                >646 785 364</a
               >
             </address>
           </div>
 
-          {% assign tags = "Ninjutsu,Kenjutsu,Kick Boxing,Pilates,Fitness,Yoga,Hip Hop" | split: ',' %}
+          {% assign tags = "Ninjutsu,Kick Boxing,Pilates,Fitness" | split: ','
+          %}
           <div class="flex flex-wrap items-center justify-start gap-2">
             {% for tag in tags %}
-              <span
-                class="{% randomRotateClassName %} inline-block rounded bg-bujinkan-dark px-2 py-1 text-xs text-white"
-                >{{tag}}</span
-              >
+            <span
+              class="{% randomRotateClassName %} inline-block rounded bg-bujinkan-dark px-2 py-1 text-xs text-white"
+              >{{tag}}</span
+            >
             {% endfor %}
           </div>
 
@@ -49,7 +52,7 @@ description: Gimnasio en Sarón, Cantabria, de Ninjutsu, fitness, pilates, yoga 
           >
             Ver en
             <a
-              href="https://www.google.es/maps/place/Gimnasio+Cuervas-Mons/@43.3255362,-3.8521905,17z/data=!3m1!4b1!4m5!3m4!1s0xd49313e8490fd11:0x3c261613722b1d58!8m2!3d43.3255404!4d-3.8499923"
+              href="https://maps.app.goo.gl/mNjz2oP7dSuzbxJa9"
               title="Ubicación en Google Maps"
               target="_blank"
               rel="noopener noreferrer"
@@ -61,20 +64,4 @@ description: Gimnasio en Sarón, Cantabria, de Ninjutsu, fitness, pilates, yoga 
       </section>
     </header>
   </section>
-</section>
-
-<section class="container mx-auto px-4 py-6">
-  <header class="mb-10 text-center">
-    <h2 class="mb-2 text-3xl text-bujinkan-red sm:text-4xl">
-      Horario de actividades
-    </h2>
-  </header>
-
-  <div class="grid grid-cols-1 xl:grid-cols-5 gap-4">
-    {% include "dojos/schedule.html" dayOfWeek: "Lunes", key: "monday" %}
-    {% include "dojos/schedule.html" dayOfWeek: "Martes", key: "tuesday" %}
-    {% include "dojos/schedule.html" dayOfWeek: "Miércoles", key: "wednesday" %}
-    {% include "dojos/schedule.html" dayOfWeek: "Jueves", key: "thursday" %}
-    {% include "dojos/schedule.html" dayOfWeek: "Viernes", key: "friday" %}
-  </div>
 </section>
